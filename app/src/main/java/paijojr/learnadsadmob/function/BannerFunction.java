@@ -8,11 +8,6 @@ import android.widget.FrameLayout;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
-import com.google.android.gms.ads.MobileAds;
-import com.google.android.gms.ads.RequestConfiguration;
-
-import java.util.ArrayList;
-import java.util.List;
 
 import paijojr.learnadsadmob.R;
 
@@ -33,15 +28,6 @@ public class BannerFunction {
     }
 
     private void loadBanner() {
-        List<String> testDevices = new ArrayList<>();
-        testDevices.add(AdRequest.DEVICE_ID_EMULATOR);
-
-        RequestConfiguration requestConfiguration
-                = new RequestConfiguration.Builder()
-                .setTestDeviceIds(testDevices)
-                .build();
-        MobileAds.setRequestConfiguration(requestConfiguration);
-
         AdSize adSize = getAdSize();
         adView.setAdSize(adSize);
 
