@@ -15,11 +15,13 @@ import java.util.List;
 
 import paijojr.learnadsadmob.function.BannerFunction;
 import paijojr.learnadsadmob.function.InterstitialFunction;
+import paijojr.learnadsadmob.function.RewardFunction;
 
 public class MainActivity extends AppCompatActivity {
 
     private BannerFunction bannerFunction;
     private InterstitialFunction interstitialFunction;
+    private RewardFunction rewardFunction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,17 +29,29 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initAdConfiguration();
-        Button BtnCallInterst = findViewById(R.id.button_interstitial);
+        Button btnCallInterst = findViewById(R.id.button_interstitial);
+        Button btnCallReward = findViewById(R.id.button_reward);
         FrameLayout frameBanner = findViewById(R.id.frame_banner_ads);
+
         bannerFunction = new BannerFunction(this, frameBanner);
         interstitialFunction = new InterstitialFunction(this);
+        rewardFunction = new RewardFunction( this);
 
-        BtnCallInterst.setOnClickListener( new View.OnClickListener() {
+        btnCallInterst.setOnClickListener( new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
                interstitialFunction.callInterstitial();
+            }
+        });
+
+        btnCallReward.setOnClickListener( new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                rewardFunction.showReward();
             }
         });
 
