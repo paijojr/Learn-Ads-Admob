@@ -27,6 +27,14 @@
             android:layout_height="wrap_content"
             android:text="@string/button_reward" />
 
+        <!-- change with native_small_view or native_medium_view -->
+        <paijojr.learnadsadmob.template.TemplateView
+            android:visibility="gone"
+            android:id="@+id/native_ads_container"
+            app:gnt_template_type="@layout/native_small_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
     </LinearLayout>
 
     <FrameLayout

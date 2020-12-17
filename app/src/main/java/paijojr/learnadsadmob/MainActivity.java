@@ -15,13 +15,17 @@ import java.util.List;
 
 import paijojr.learnadsadmob.function.BannerFunction;
 import paijojr.learnadsadmob.function.InterstitialFunction;
+import paijojr.learnadsadmob.function.NativeFunction;
 import paijojr.learnadsadmob.function.RewardFunction;
+import paijojr.learnadsadmob.template.NativeTemplate;
+import paijojr.learnadsadmob.template.TemplateView;
 
 public class MainActivity extends AppCompatActivity {
 
     private BannerFunction bannerFunction;
     private InterstitialFunction interstitialFunction;
     private RewardFunction rewardFunction;
+    private NativeFunction nativeFunction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,10 +36,12 @@ public class MainActivity extends AppCompatActivity {
         Button btnCallInterst = findViewById(R.id.button_interstitial);
         Button btnCallReward = findViewById(R.id.button_reward);
         FrameLayout frameBanner = findViewById(R.id.frame_banner_ads);
+        TemplateView templateView = findViewById(R.id.native_ads_container);
 
         bannerFunction = new BannerFunction(this, frameBanner);
         interstitialFunction = new InterstitialFunction(this);
         rewardFunction = new RewardFunction( this);
+        nativeFunction = new NativeFunction(this, templateView);
 
         btnCallInterst.setOnClickListener( new View.OnClickListener() {
 
