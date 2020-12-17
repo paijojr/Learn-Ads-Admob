@@ -19,7 +19,7 @@ public class InterstitialFunction {
         this.activity = activity;
 
         mInterstitialAd = new InterstitialAd(activity);
-        mInterstitialAd.setAdUnitId(activity.getString(R.string.interstitial_id_test));
+        mInterstitialAd.setAdUnitId(activity.getString(R.string.interstitialvideo_id_test));
         requestInterstitial();
     }
 
