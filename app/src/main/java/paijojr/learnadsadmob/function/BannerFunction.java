@@ -11,7 +11,7 @@ import com.google.android.gms.ads.AdView;
 
 import paijojr.learnadsadmob.R;
 
-/*
+/**
  * This repo is learn how to implement ads from Admob in Android Studio with java languages
  * https://github.com/paijojr/Learn-Ads-Admob
  * Adaptive Banner Function

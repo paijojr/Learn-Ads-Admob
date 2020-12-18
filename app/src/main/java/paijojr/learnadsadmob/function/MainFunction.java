@@ -5,7 +5,7 @@ import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 
-/*
+/**
  * This repo is learn how to implement ads from Admob in Android Studio with java languages
  * https://github.com/paijojr/Learn-Ads-Admob
  * Main Function is here
