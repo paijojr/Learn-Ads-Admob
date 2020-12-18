@@ -12,6 +12,12 @@ import paijojr.learnadsadmob.R;
 import paijojr.learnadsadmob.template.NativeTemplate;
 import paijojr.learnadsadmob.template.TemplateView;
 
+/*
+ * This repo is learn how to implement ads from Admob in Android Studio with java languages
+ * https://github.com/paijojr/Learn-Ads-Admob
+ * Native Ads Function
+ */
+
 public class NativeFunction {
     private final Activity activity;
     private final TemplateView templateView;
@@ -45,4 +51,5 @@ public class NativeFunction {
                 .build();
         adLoader.loadAd(new AdRequest.Builder().build());
     }
+
 }

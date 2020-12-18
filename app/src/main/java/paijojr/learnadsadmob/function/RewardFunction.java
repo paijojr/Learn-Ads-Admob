@@ -17,6 +17,12 @@ import paijojr.learnadsadmob.R;
 
 import static paijojr.learnadsadmob.function.MainFunction.checkNetwork;
 
+/*
+ * This repo is learn how to implement ads from Admob in Android Studio with java languages
+ * https://github.com/paijojr/Learn-Ads-Admob
+ * Reward Ads Function
+ */
+
 public class RewardFunction {
     private final Activity activity;
     private RewardedAd rewardedAd;

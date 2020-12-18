@@ -1,14 +1,14 @@
 <resources>
     <string name="app_name">Learn Ads Admob</string>
 
-    <!-- https://developers.google.com/admob/android/test-ads  -->
+    <!-- id test ads can be found in https://developers.google.com/admob/android/test-ads  -->
     <string name="banner_id_test">ca-app-pub-3940256099942544/6300978111</string>
     <string name="interstitial_id_test">ca-app-pub-3940256099942544/1033173712</string>
     <string name="interstitialvideo_id_test">ca-app-pub-3940256099942544/8691691433</string>
     <string name="reward_id_test">ca-app-pub-3940256099942544/5224354917</string>
     <string name="native_id_test">ca-app-pub-3940256099942544/2247696110</string>
 
-
+    <!-- string button asset  -->
     <string name="button_interstitial">Call Interstitial Ads</string>
     <string name="button_reward">Call Reward Ads</string>
 

@@ -17,8 +17,14 @@ import paijojr.learnadsadmob.function.BannerFunction;
 import paijojr.learnadsadmob.function.InterstitialFunction;
 import paijojr.learnadsadmob.function.NativeFunction;
 import paijojr.learnadsadmob.function.RewardFunction;
-import paijojr.learnadsadmob.template.NativeTemplate;
 import paijojr.learnadsadmob.template.TemplateView;
+
+/*
+* This repo is learn how to implement ads from Admob in Android Studio with java languages
+* https://github.com/paijojr/Learn-Ads-Admob
+* Regard,
+* http://facebook.com/paijojr
+*/
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,12 +42,12 @@ public class MainActivity extends AppCompatActivity {
         Button btnCallInterst = findViewById(R.id.button_interstitial);
         Button btnCallReward = findViewById(R.id.button_reward);
         FrameLayout frameBanner = findViewById(R.id.frame_banner_ads);
-        TemplateView templateView = findViewById(R.id.native_ads_container);
+        TemplateView nativeView = findViewById(R.id.native_ads_container);
 
         bannerFunction = new BannerFunction(this, frameBanner);
         interstitialFunction = new InterstitialFunction(this);
         rewardFunction = new RewardFunction( this);
-        nativeFunction = new NativeFunction(this, templateView);
+        nativeFunction = new NativeFunction(this, nativeView);
 
         btnCallInterst.setOnClickListener( new View.OnClickListener() {
 
@@ -60,7 +66,6 @@ public class MainActivity extends AppCompatActivity {
                 rewardFunction.showReward();
             }
         });
-
 
     }
 
@@ -98,4 +103,5 @@ public class MainActivity extends AppCompatActivity {
         }
         super.onDestroy();
     }
+
 }
