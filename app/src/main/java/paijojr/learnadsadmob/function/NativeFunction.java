@@ -13,8 +13,8 @@ import paijojr.learnadsadmob.template.NativeTemplate;
 import paijojr.learnadsadmob.template.TemplateView;
 
 public class NativeFunction {
-    private Activity activity;
-    private TemplateView templateView;
+    private final Activity activity;
+    private final TemplateView templateView;
 
     public NativeFunction (Activity activity, TemplateView templateView) {
         this.activity = activity;
